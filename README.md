@@ -13,6 +13,7 @@ dpkg -i *.deb
 
 
 WSLのインストール(wsl --install)
+
 WSLへSDK(gcc,gdb,make...)インストール
 
 Windows上にVScodeインストール
