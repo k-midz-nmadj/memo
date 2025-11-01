@@ -17,11 +17,15 @@ WSLのインストール(wsl --install)
 WSLへSDK(gcc,gdb,make...)インストール
 
 Windows上にVScodeインストール
+
 拡張機能"Remote Development"(Remote WSL)インストール
+
 WSL内のソースディレクトリから"code ."コマンド実行
+
 拡張機能"C/C++ Extension Pack"インストール
 
 "tasks.json"にmakeコマンドと、sshコマンド(ターゲットへの実行ファイル転送、gdbserver起動)を追記
+
 "launch.json"にデバッガ(gdb)のパス(miDebuggerPath)と、ターゲットアドレス(miDebuggerServerAddress)を追記
 
 https://learn.microsoft.com/ja-jp/windows/wsl/tutorials/wsl-vscode
