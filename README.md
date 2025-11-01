@@ -10,24 +10,24 @@ https://packages.debian.org/ja/sid/armhf/gdbserver/download
 
 dpkg -i *.deb
 
+==================================================================================================================
 
+1. WSLのインストール(wsl --install)
 
+2. WSLへSDK(gcc,gdb,make...)インストール
 
-WSLのインストール(wsl --install)
+3. Windows上にVScodeインストール
 
-WSLへSDK(gcc,gdb,make...)インストール
+4. 拡張機能"Remote Development"(Remote WSL)インストール
 
-Windows上にVScodeインストール
+5. WSL内のソースディレクトリから"code ."コマンド実行
 
-拡張機能"Remote Development"(Remote WSL)インストール
+7. 拡張機能"C/C++ Extension Pack"インストール
 
-WSL内のソースディレクトリから"code ."コマンド実行
+8. "tasks.json"にmakeコマンドと、sshコマンド(ターゲットへの実行ファイル転送、gdbserver起動)を追記
 
-拡張機能"C/C++ Extension Pack"インストール
+9. "launch.json"にデバッガ(gdb)のパス(miDebuggerPath)と、ターゲットアドレス(miDebuggerServerAddress)を追記
 
-"tasks.json"にmakeコマンドと、sshコマンド(ターゲットへの実行ファイル転送、gdbserver起動)を追記
-
-"launch.json"にデバッガ(gdb)のパス(miDebuggerPath)と、ターゲットアドレス(miDebuggerServerAddress)を追記
 
 https://learn.microsoft.com/ja-jp/windows/wsl/tutorials/wsl-vscode
 
