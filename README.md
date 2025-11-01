@@ -12,6 +12,7 @@ dpkg -i *.deb
 
 
 
+
 WSLのインストール(wsl --install)
 
 WSLへSDK(gcc,gdb,make...)インストール
@@ -29,8 +30,11 @@ WSL内のソースディレクトリから"code ."コマンド実行
 "launch.json"にデバッガ(gdb)のパス(miDebuggerPath)と、ターゲットアドレス(miDebuggerServerAddress)を追記
 
 https://learn.microsoft.com/ja-jp/windows/wsl/tutorials/wsl-vscode
+
 https://zenn.dev/meiryo7743/articles/set-up-c-lang-env-in-vs-code-and-wsl2
+
 https://zenn.dev/kail/articles/fe7cdd321db9ba
 
 https://qiita.com/_masa_u/items/d3c1fa7898b0783bc3ed
+
 https://qiita.com/Soramame11/items/3a54c0aa45d0869d9395
