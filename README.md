@@ -9,3 +9,23 @@ https://packages.debian.org/ja/sid/armhf/librabbitmq-dev/download
 https://packages.debian.org/ja/sid/armhf/gdbserver/download
 
 dpkg -i *.deb
+
+
+
+WSLのインストール(wsl --install)
+WSLへSDK(gcc,gdb,make...)インストール
+
+Windows上にVScodeインストール
+拡張機能"Remote Development"(Remote WSL)インストール
+WSL内のソースディレクトリから"code ."コマンド実行
+拡張機能"C/C++ Extension Pack"インストール
+
+"tasks.json"にmakeコマンドと、sshコマンド(ターゲットへの実行ファイル転送、gdbserver起動)を追記
+"launch.json"にデバッガ(gdb)のパス(miDebuggerPath)と、ターゲットアドレス(miDebuggerServerAddress)を追記
+
+https://learn.microsoft.com/ja-jp/windows/wsl/tutorials/wsl-vscode
+https://zenn.dev/meiryo7743/articles/set-up-c-lang-env-in-vs-code-and-wsl2
+https://zenn.dev/kail/articles/fe7cdd321db9ba
+
+https://qiita.com/_masa_u/items/d3c1fa7898b0783bc3ed
+https://qiita.com/Soramame11/items/3a54c0aa45d0869d9395
