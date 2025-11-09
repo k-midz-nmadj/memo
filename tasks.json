@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start gdbserver",
+      "type": "shell",
+      "command": "ssh user@remotehost 'gdbserver :1234 /home/user/myapp'"
+    }
+  ]
+}
