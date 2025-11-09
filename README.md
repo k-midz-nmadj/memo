@@ -42,52 +42,6 @@ https://qiita.com/Soramame11/items/3a54c0aa45d0869d9395
 
 
 
-
-[tasks.json]
-{
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Start gdbserver",
-      "type": "shell",
-      "command": "ssh user@remotehost 'gdbserver :1234 /home/user/myapp'"
-    }
-  ]
-}
-
-[launch.json]
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Remote Debug with gdbserver",
-      "type": "cppdbg",                       // 使用される基盤デバッガー(自動設定)
-      "request": "launch",                    // プログラムの起動方法(新規起動:launch/起動済み:attach)
-      "program": "${workspaceFolder}/myapp",  // ローカルの実行ファイル
-      "args": [],
-      "cwd": "${workspaceFolder}",            // 作業ディレクトリ
-      "externalConsole": true,                // 標準入力を受け付けるコンソール起動
-      "MIMode": "gdb",                        // 接続するデバッガの種類(gdb/lldb)
-      "miDebuggerPath": "/usr/bin/gdb",             // ローカルのgdbパス
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",    // 構造体等の複合データを分かり易く表示
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
-      "miDebuggerServerAddress": "remotehost:1234", // gdbserverの接続先:ポート8172
-      "preLaunchTask": "Start gdbserver"        // デバッグ実行前に起動するタスク
-//      "pipeTransport": {                      // ssh経由でリモートのgdbを使用する場合
-//        "pipeProgram": "ssh",
-//        "pipeArgs": ["user@remotehost"],
-//        "debuggerPath": "/usr/bin/gdb"        // リモートのgdbパス(リモート側にgdbがあれば、gdbserver不要)
-//      },
-//      "postDebugTask": "..."                  // デバッグ終了時に起動するタスク
-    }
-  ]
-}
-
 https://code.visualstudio.com/docs/cpp/launch-json-reference
 
 https://qiita.com/kkrtech/items/3b9cadba78ca3147fe64
