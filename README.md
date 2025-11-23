@@ -44,7 +44,9 @@ https://qiita.com/Soramame11/items/3a54c0aa45d0869d9395
 
 https://code.visualstudio.com/docs/cpp/launch-json-reference
 
+
 https://qiita.com/kkrtech/items/3b9cadba78ca3147fe64
+https://tex2e.github.io/blog/git/git-bare-repo-on-win-file-server
 
 
 
