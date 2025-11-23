@@ -51,33 +51,3 @@ https://tex2e.github.io/blog/git/git-bare-repo-on-win-file-server
 
 https://1drv.ms/x/c/1c12152a6259c6c5/EVKG8xQ5pLtEpgsWJWUFgIEBQrAAbRYfTRaRphXi-WZN4A
 
-
-git config --global user.name "user"
-
-git config --global user.email "user@email"
-
-git init --bare --shared=true <リポジトリの共有フォルダ>	# /mnt/<ネットワークドライブ名>/...
-
-cd <リポジトリに格納するフォルダ>
-
-git init
-
-git remote add origin <リポジトリの共有フォルダ>
-
-git remote -v
-
-git add .
-
-git commit -m "add files"
-
-git push origin master
-
-
-
-git clone <リポジトリの共有フォルダ>
-
-git pull origin master
-
-git commit -a -m "change files"
-
-git push origin master
