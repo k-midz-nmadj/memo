@@ -49,5 +49,6 @@ https://qiita.com/kkrtech/items/3b9cadba78ca3147fe64
 
 https://tex2e.github.io/blog/git/git-bare-repo-on-win-file-server
 
-https://1drv.ms/x/c/1c12152a6259c6c5/EVKG8xQ5pLtEpgsWJWUFgIEBQrAAbRYfTRaRphXi-WZN4A
+https://1drv.ms/x/c/1c12152a6259c6c5/EVKG8xQ5pLtEpgsWJWUFgIEB6nD47-dYwsKeNu10EwyDXA?e=S0xygi
+
 
