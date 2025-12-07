@@ -19,3 +19,21 @@ git pull origin master
 
 git commit -a -m "change files"
 git push origin master
+
+
+CFLAGS="-Os" \
+./configure \
+  --target=arm-linux-gnueabihf \
+  --disable-tui \
+  --disable-gdbtk \
+  --disable-nls \
+  --disable-sim \
+  --disable-source-highlight \
+  --disable-python \
+  --without-guile \
+  --disable-shared \
+  --without-included-regexp \
+  --without-included-gettext \
+  --without-included-libiberty
+make
+strip gdb
