@@ -1,0 +1,28 @@
+
+tce-load -wi tc-install.tcz
+sudo tc-install.sh
+#Install from [R]unning OS, from booted [C]drom, ...: [C]CD-ROMからインストールを選択
+#Select Install Type [F]rugal, [H]DD, [Z]ip.: インストール種別は[H]HDDを選択
+#Select disk for core: インストール先ディスクは[1]sdaを選択
+#Select Formatting Option for sda1: ファイルシステムは[3]ext4を選択
+#Enter space separated boot options:
+#ブートオプション指定で、"home=sda1 opt=sda1 tce=sda1 host=ホスト名 norestore noautologin" を1行で入力
+
+TinyCore64-16.2
+
+#tce-loda -wi openssh
+#mkdir -p /opt/local/etc/ssh
+#cd /opt/local/etc/ssh
+#cp /usr/local/etc/ssh/sshd_config.orig sshd_config
+#ssh-keygen -t ed25519 -f ssh_host_ed25519_key
+#vi /opt/bootlocal.sh
+...
+/usr/local/sbin/sshd -f /opt/local/etc/ssh/sshd_config -h /opt/local/etc/ssh/ssh_host_ed25519_key
+
+#sudo passwd tc
+#sudo cp /etc/shadow /opt/local/etc/shadow
+
+#vi /opt/bootsync.sh
+...
+sudo cp -f /opt/local/etc/shadow /etc/shadow
+./bootlocal.sh &
