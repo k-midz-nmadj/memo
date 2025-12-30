@@ -1,5 +1,6 @@
 [TinyCoreLinux インストール手順]
 
+<CD boot>
 #tce-load -wi tc-install.tcz
 #sudo tc-install.sh
 Install from [R]unning OS, from booted [C]drom, ...: [C]CD-ROMからインストールを選択
@@ -10,6 +11,7 @@ Enter space separated boot options:
 ブートオプション指定で、"home=sda1 opt=sda1 tce=sda1 host=ホスト名 norestore noautologin" を1行で入力
 #sudo poweroff
 
+<HDD boot>
 #tce-loda -wi openssh
 #mkdir -p /opt/local/etc/ssh
 #cd /opt/local/etc/ssh
