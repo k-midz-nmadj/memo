@@ -1,4 +1,4 @@
-[TinyCore インストール手順]
+[TinyCoreLinux インストール手順]
 
 #tce-load -wi tc-install.tcz
 #sudo tc-install.sh
