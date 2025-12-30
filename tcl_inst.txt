@@ -13,18 +13,18 @@ Enter space separated boot options:
 
 <HDD boot>
 #tce-loda -wi openssh
-#mkdir -p /opt/local/etc/ssh
-#cd /opt/local/etc/ssh
+#mkdir -p /opt/etc/ssh
+#cd /opt/etc/ssh
 #cp /usr/local/etc/ssh/sshd_config.orig sshd_config
 #ssh-keygen -t ed25519 -f ssh_host_ed25519_key
 #vi /opt/bootlocal.sh
 ...
-/usr/local/sbin/sshd -f /opt/local/etc/ssh/sshd_config -h /opt/local/etc/ssh/ssh_host_ed25519_key
+/usr/local/sbin/sshd -f /opt/etc/ssh/sshd_config -h /opt/etc/ssh/ssh_host_ed25519_key
 
 #sudo passwd tc
-#sudo cp /etc/shadow /opt/local/etc/shadow
+#sudo cp /etc/shadow /opt/etc/shadow
 
 #vi /opt/bootsync.sh
 ...
-sudo cp -f /opt/local/etc/shadow /etc/shadow
+sudo cp -f /opt/etc/shadow /etc/shadow
 ./bootlocal.sh &
