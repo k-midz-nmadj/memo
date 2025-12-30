@@ -1,4 +1,4 @@
-[TinyCoreLinux インストール手順]
+[TinyCoreLinux SSHサーバ インストール手順]
 
 <CD boot>
 #tce-load -wi tc-install.tcz
