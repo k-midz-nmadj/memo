@@ -1,3 +1,4 @@
+[TinyCore インストール手順]
 
 #tce-load -wi tc-install.tcz
 #sudo tc-install.sh
@@ -7,8 +8,7 @@ Select disk for core: インストール先ディスクは[1]sdaを選択
 Select Formatting Option for sda1: ファイルシステムは[3]ext4を選択
 Enter space separated boot options:
 ブートオプション指定で、"home=sda1 opt=sda1 tce=sda1 host=ホスト名 norestore noautologin" を1行で入力
-
-TinyCore64-16.2
+#sudo poweroff
 
 #tce-loda -wi openssh
 #mkdir -p /opt/local/etc/ssh
