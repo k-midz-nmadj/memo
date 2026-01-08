@@ -20,4 +20,4 @@ git pull origin master
 git commit -a -m "change files"
 git push origin master
 
-ssh tc@129.146.16.200
+ssh tc@129.146.16.200 -oHostKeyAlgorithms=+ssh-ed25519
