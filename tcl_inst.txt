@@ -22,5 +22,5 @@ Enter space separated boot options:
 #cd /opt
 #sudo cp /etc/shadow etc/shadow
 
-echo "sudo cp -f /opt/etc/shadow /etc/shadow" >> bootsync.sh
-echo "/usr/local/sbin/sshd -f /opt/etc/ssh/sshd_config -h /opt/etc/ssh/ssh_host_ed25519_key &" >> bootsync.sh
+echo "sudo cp -f /opt/etc/shadow /etc/shadow" >> bootlocal.sh
+echo "/usr/local/sbin/sshd -f /opt/etc/ssh/sshd_config -h /opt/etc/ssh/ssh_host_ed25519_key &" >> bootlocal.sh
