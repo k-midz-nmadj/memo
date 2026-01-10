@@ -1,6 +1,6 @@
 [TinyCoreLinux SSHサーバ インストール手順]
 
-<CD boot>
+<CD boot>	...[I/O APIC: on]
 #tce-load -wi tc-install.tcz
 #sudo tc-install.sh
 Install from [R]unning OS, from booted [C]drom, ...: [C]CD-ROMからインストールを選択
