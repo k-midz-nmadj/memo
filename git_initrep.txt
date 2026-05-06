@@ -23,13 +23,10 @@ git push origin master
 ssh tc@129.146.16.200 -oHostKeyAlgorithms=+ssh-ed25519
 ssh tc@217.142.241.220 -oHostKeyAlgorithms=+ssh-ed25519
 
-function popCount(x) {
-	x -= (x >>> 1 & 0x55555555);
-	x = (x & 0x33333333) + (x >>> 2 & 0x33333333);
-	x += (x >>> 4 & 0x0f0f0f0f);
-	return (x * 0x01010101 >>> 24);
-}
-
 https://editor.plantuml.com/uml/SoWkIImgAStDuU9IL2asj5KgDdpQklHfrsmb4Dy8o3T2uXi3-SOmFbUqLgo2hgwT0b0V5nUGi2gmUjhP-tJslCUDwo2AdZOi0KeOMIKc5MiKw1ORQTeP6IYegId4v6aK6zcOAjJKA1GRsLcQQW9L6SDK6MlQ6Hg03LG06swaOALGO0kq0yI4sWSKyik7283una1-P6gn5L2P4SWe1RWggAWngYXGBvT3QbuAoDy0
 
 https://editor.plantuml.com/uml/TOzD2i9038NtEKKkq0kKKlhZneKRGLo7QQX3fpEQIGMXXxTJfNRZ9f3tyhv7ggWaEeqE80xMtqbenAWlnyiKQrPhv_1ZOc_un35IpxMplKUn_Ks19Wrar3v96OC7k4GMp4giSpo4Qv01wkzwzChYoQ4XvpvgasDHe15UqkTK4XNB4fhajHjWdcTeCKltoKeqw7XhhHDh4LFph_yFUfThLZ1KxBlqxXi0
+
+>winget install yt-dlp
+>yt-dlp -f "ba[ext=m4a]" -x "https://music.youtube.com/playlist?list=..." -o "%(playlist_index)02d. %(title)s.%(ext)s"
+
