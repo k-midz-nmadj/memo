@@ -29,4 +29,4 @@ https://editor.plantuml.com/uml/TOzD2i9038NtEKKkq0kKKlhZneKRGLo7QQX3fpEQIGMXXxTJ
 
 >winget install yt-dlp
 >yt-dlp -f "ba[ext=m4a]" -x "https://music.youtube.com/playlist?list=..." -o "%(playlist_index)02d. %(title)s.%(ext)s"
-
+yt-dlp -f m4a -x "https://music.youtube.com/playlist?list=..." -o "%(playlist_index)02d. %(title)s.%(ext)s"
