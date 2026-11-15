@@ -27,6 +27,8 @@ https://editor.plantuml.com/uml/SoWkIImgAStDuU9IL2asj5KgDdpQklHfrsmb4Dy8o3T2uXi3
 
 https://editor.plantuml.com/uml/TOzD2i9038NtEKKkq0kKKlhZneKRGLo7QQX3fpEQIGMXXxTJfNRZ9f3tyhv7ggWaEeqE80xMtqbenAWlnyiKQrPhv_1ZOc_un35IpxMplKUn_Ks19Wrar3v96OC7k4GMp4giSpo4Qv01wkzwzChYoQ4XvpvgasDHe15UqkTK4XNB4fhajHjWdcTeCKltoKeqw7XhhHDh4LFph_yFUfThLZ1KxBlqxXi0
 
+https://mermaid.live/edit#pako:eNqNVE2PmzAU_CuWT61EIjCBJVY20qofUqVtLyv10NIDwS-AFnBkoN00irT_tX-ktjFJnNCkPkTOeGbe8zyLHU45A0zxquTp82QFbRKLuEZyaYRmgncbjwYDqlbKy66qG2SBDe9ECqjZJClQHzVNbp1q2BJ8fVKlv8e436AnED9BxPiHIXsoS9N-j6Bce5L54fGjPL_h20MzlLHVAEPNhu3I7Qj1xm7nXZheBbThgxD81yfmLWSzf15fHx--yF_Z8vLNy9v_tzPtjrTqj7dKLKsmZ5RcJmJBMlByCPQf7dgKGWejJ3SEz_o0L-D-fmlmOxyYAU8my9NnYVBFl4MeUDVzBamJj-hPhyoZmnriKY81bVAfWmtytDD12Sl5YUz7q51J2NAJscALiRXPUJ9YZu22BNS_NrQuypLWvAanaQV_Br0_f5-9wkSqFWWR5W0mkq1NMeEcKauyg5HaMtdTG4AzgoroFoFdZ6hAbxFMSCM0m6qne-3eKuIzAnZwJgqG6TopG3BwBaJK1H-8U8oYtzlUEGMqtwzWSVe2MY7rvdRtkvob5xWmreikUg4qyw8-3YYlLbwvElnkSJGvH8Q73tUtpr47C7UJpjv8gmlIpi5xvbnnzUlIwnng4K1C_emd7weRF8zIPIyivYN_66ruNLoLXLnCyPWjwJ3NHAysaLn43H-e9Vd6_xfD2chR
+
 >winget install yt-dlp
 >yt-dlp -f "ba[ext=m4a]" -x "https://music.youtube.com/playlist?list=..." -o "%(playlist_index)02d. %(title)s.%(ext)s"
 yt-dlp -f m4a -x "https://music.youtube.com/playlist?list=..." -o "%(playlist_index)02d. %(title)s.%(ext)s"
